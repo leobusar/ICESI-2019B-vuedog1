@@ -7,8 +7,8 @@
                 :rules="nameRules">
                 </v-text-field>
             <v-text-field label="Email" v-model="email" :rules="emailRules"></v-text-field>
-            <v-text-field 
-                label="Phone" 
+            <v-text-field
+                label="Phone"
                 v-model="phone"
                 :rules="phoneRules"
                 required
