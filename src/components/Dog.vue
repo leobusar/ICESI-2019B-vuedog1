@@ -8,13 +8,24 @@
                 <p class="breed">{{dog.breed}} </p>
             </div>
         </v-card-title>
+        <v-card-actions>
+          <v-btn @click="addToFavorites(dog)">Add to Favorites</v-btn>
+        </v-card-actions>
     </v-card>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   props: {
     dog: Object,
+  },
+  methods: {
+    ...mapActions(['addToFavorites']),
+    // addToFavorites() {
+    //   this.$store.commit('addFavorites', this.dog);
+    // },
   },
 };
 </script>

@@ -8,6 +8,7 @@ import App from './App';
 import Home from './views/Home';
 import Pets from './views/Pets';
 import Favorites from './views/Favorites';
+import Form from './views/Form';
 import store from './store';
 
 Vue.use(Vuetify);
@@ -17,6 +18,7 @@ const routes = [
   { path: '/', component: Home },
   { path: '/pets', component: Pets },
   { path: '/favorites', component: Favorites },
+  { path: '/form', component: Form },
 ];
 
 const router = new VueRouter({ routes });
